@@ -1,58 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheMealDb api</title>
-</head>
-<body>
-    <div class="root container-fluid d-flex flex-column">
-        <nav class="navbar navbar-expand-lg mt-3">
-            <div class="container">
-                <a class="navbar-brand" href="#">TheMealDb</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <button class="btn link" name="route" value="home">Home</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="btn link" name="route" value="random">Random meal</button>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <select class="api__method form-select input-group-prepend d-none">
-                            <option value="name">Name:</option>
-                            <option value="id">Id:</option>
-                        </select>
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        <header class='container'>
-            <div class='header__landing row flex-lg-row-reverse align-items-center g-5 py-5'>
-                <div>
-                    <h1>Cooking Made Fun and Easy: Unleash Your Inner Chef</h1>
-                    <p>Discover more than 300 recipes in your hand with the best recipe. Help you to find the easiest way to cook.</p>
-                    <button class="btn btn-primary btn__discover" name="discover" value="discover">Discover</button>
-                </div>
-                <div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <section class="section__discover container mb-4">
-                <h2>Discover recipes</h2>
-                <hr/>
-                <div class="div__discover row row-cols-2 row-cols-md-3 row-cols-xl-6 g-3">
-                </div>
-            </section>
-        </main>
-        <footer class="mt-auto">
+import './_footer.scss'
+const footerTemplate = ()=>{
+    return `
+        <footer class="align-items-end">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -97,7 +46,7 @@
                 </p>
             </div>
         </footer>
-    </div>
-    <script src="bundle.js"></script>
-</body>
-</html>
+    `
+}
+
+export default footerTemplate;
