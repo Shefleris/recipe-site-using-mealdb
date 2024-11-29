@@ -1,7 +1,7 @@
 const recipeTemplate = (mealTitle, mealId, mealImg, mealDesc)=>{
     return `
     <section class='container recipe mb-5'>
-        <div class='row row-cols-1 row-cols-md-2'>
+        <div class='row row-cols-1 row-cols-lg-2'>
             <div class='col mb-3'>
                 <img class='card-img-top rounded' src='${mealImg}' alt='${mealTitle} picture'>
             </div>
