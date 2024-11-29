@@ -3,7 +3,7 @@ const footerTemplate = ()=>{
     return `
         <footer class="align-items-end">
             <div class="container">
-                <div class="row">
+                <div class="row row-cols-1 row-cols-md-3">
                     <div class="col">
                         <h3>Menu</h3>
                         <ul class="footer_menu grid">
