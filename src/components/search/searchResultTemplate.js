@@ -12,7 +12,7 @@ function searchResultTemplate (){
                         <div class="accordion-body row row-cols-1 g-3 row-cols-md-3">
                             <div class="col">
                                 <label class="visually-hidden" for="main_ingredient">Choose main ingredient</label>
-                                <input class="form-control" list="filter_ingredients" name="main_ingredient" placeholder="Choose a main ingredient"/>
+                                <input class="form-control" list="list-ingredient" name="main_ingredient" placeholder="Choose a main ingredient"/>
                             </div>
                             <div class="col">
                                 <label class="visually-hidden" for="category">Choose a category</label>
