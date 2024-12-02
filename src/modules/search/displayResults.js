@@ -15,7 +15,6 @@ async function displayResults(response){
         displayResultsSection();
     }
 
-    console.log(response)
     if (response!=null){
         if (document.querySelector(selectSection)){
             renderComponent(selectSection, undefined, 'div',{class:'div_search_results row row-cols-1 row-cols-md-3 row-cols-lg-6 gy-5'})

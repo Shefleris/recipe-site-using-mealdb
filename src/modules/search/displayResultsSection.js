@@ -24,9 +24,6 @@ function displayResultsSection(){
                 console.error(`Couldn't determine if list is in storage`);
                 break
         }
-
-        console.log(data)
-
         switch (optionType){
             case 'a':
                 await data[0].forEach(async (dataValue)=>{
